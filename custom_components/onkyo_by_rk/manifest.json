@@ -1,0 +1,32 @@
+{
+  "domain": "onkyo_by_rk",
+  "name": "Onkyo by RK",
+  "version": "0.1.1",
+  "documentation": "https://github.com/rk-home/onkyo_by_rk",
+  "issue_tracker": "https://github.com/rk-home/onkyo_by_rk/issues",
+  "codeowners": [
+    "@rk-home"
+  ],
+  "requirements": [],
+  "config_flow": true,
+  "iot_class": "local_push",
+  "integration_type": "hub",
+  "zeroconf": [
+    "_onkyo._tcp.local.",
+    "_eiscp._tcp.local."
+  ],
+  "ssdp": [
+    {
+      "manufacturer": "ONKYO"
+    },
+    {
+      "manufacturer": "Onkyo"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaRenderer:1"
+    },
+    {
+      "deviceType": "urn:schemas-upnp-org:device:MediaServer:1"
+    }
+  ]
+}

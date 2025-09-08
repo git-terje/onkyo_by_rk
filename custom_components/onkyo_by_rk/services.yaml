@@ -1,0 +1,11 @@
+dump_capabilities:
+  name: Dump capabilities
+  description: Query a set of QSTN commands and save to /config/onkyo_by_rk/<entry_id>_probe.json
+  fields:
+    entry_id:
+      description: Config entry ID (if multiple receivers).
+      example: "abcd1234"
+
+debug_files:
+  name: Debug files
+  description: Log the files present under custom_components/onkyo_by_rk to help diagnose leftovers
